@@ -1,0 +1,43 @@
+//Bennouna ismail & Ziad Fourati
+//Gestion des appareils :
+//Post : http://127.0.0.1:8000/api/register
+{
+    "name":"ismail",
+    "email":"ismail.com",
+    "password":"azerty123"
+}
+//Post: http://127.0.0.1:8000/api/login
+{
+    
+    "email":"ismail@gmail.com",
+    "password":"azerty123"
+//le resultat comme exemple
+    {
+        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNjk4MDAyOTU3LCJpYXQiOjE2OTc5OTkzNTd9.XdAYPzmoHg_Dppql736_F5T8GeGLtzS0D1dRFQ2Ufe0"
+    }
+
+}
+//get : http://127.0.0.1:8000/api/user
+// il doit afficher normalement 
+{
+    "id": 3,
+    "name": "ismail",
+    "email": "ismail@gmail.com"
+}
+
+voici la  norme à respecter pour Products :
+comme exemple
+{
+    {
+        "id":"ismail",
+        "name":"Hp PRO BOOK ",
+        "age":"2019",
+        "description":"Pc Occasion i5 9eme generation "
+    }
+    
+}
+// Create a product: http://localhost:8000/api/products/create/
+// List all products: http://localhost:8000/api/products/
+// Retrieve a product by ID: http://localhost:8000/api/products/1/
+// Update a product by ID: http://localhost:8000/api/products/1/update/
+// Delete a product by ID: http://localhost:8000/api/products/1/delete/
